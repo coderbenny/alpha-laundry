@@ -10,3 +10,18 @@ body{
     background-color: #f2f2f2;
 }
 
+.header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header h1{
+    margin-bottom: 5px;
+}
+
+.topnav a{
+    text-decoration: none;
+    padding-right: 10px;
+}
+
