@@ -33,3 +33,13 @@ main{
     padding: 10px;
     background-color: white;
 }
+
+.hero, .how-it-works, .alpha-premium, .schedule-wash, .testimonials, .contact-us, .faq{
+    background-color: yellowgreen;
+}
+
+footer{
+    text-align: center;
+}
+
+
