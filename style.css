@@ -20,8 +20,16 @@ body{
     margin-bottom: 5px;
 }
 
+.topnav{
+    margin-bottom: 10px;
+}
+
 .topnav a{
     text-decoration: none;
     padding-right: 10px;
 }
 
+main{
+    padding: 10px;
+    background-color: white;
+}
