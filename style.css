@@ -36,6 +36,12 @@ main{
 
 .hero, .how-it-works, .alpha-premium, .schedule-wash, .testimonials, .contact-us, .faq{
     background-color: yellowgreen;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.hero{
+    padding-bottom: 10px;
 }
 
 footer{
