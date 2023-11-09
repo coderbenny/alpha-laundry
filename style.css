@@ -7,7 +7,6 @@ body{
     padding: 0;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
-    background-color: #f2f2f2;
 }
 
 .header{
@@ -18,6 +17,7 @@ body{
 
 .header h1{
     margin-bottom: 5px;
+    font-size: 2.5rem;
 }
 
 .topnav{
@@ -41,19 +41,27 @@ main{
     margin-bottom: 20px;
 }
 
+h1, h2, h3, h4{
+    font-family: 'Lato', sans-serif;
+}
+
 .hero{
-    background-image: url(./assets/giovanna-karla-givi-zXlR3jKJf6M-unsplash.jpg);
+    background-image: url(./assets/man-sticks-head-through-multicolored-laundry-poses-through-washing-machine-drum-with-bottle-detergent.jpg);
     background-size:cover;
     padding: 50px;
-    height: 500px;
+    height: 700px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-card{
     padding: 20px;
-    width: 500px;
+    width: 700px;
     height: 350px;
-    background-color: rgb(232, 246, 246);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .hero-card h2{
@@ -63,6 +71,7 @@ main{
 
 .hero-card p{
     line-height: 1.5;
+    padding-bottom: 10px;
 }
 
 .hero-card button{
@@ -71,11 +80,67 @@ main{
 }
 
 .how-it-works{
+    background-image: url(./assets/giovanna-karla-givi-zXlR3jKJf6M-unsplash.jpg);
+    background-size:cover;
     padding: 50px;
+    justify-content: center;
+    height: 700px;
+}
+
+.how-it-works h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
 }
 
 .workings{
     display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.step-one{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 30px;
+    margin-right: 20px;
+    border-radius: 7px;
+}
+
+.alpha-premium {
+    padding: 50px;
+    height: 500px;
+    align-items: center;
+}
+
+.alpha-premium h1{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.premium-body{
+    display: flex;
+    /* background-color: #f2f2f2; */
+}
+
+.premium-body img{
+    float: right;
+    width: 300px;
+    height: 300px;
+}
+
+.premium-content{
+    padding: 50px;
+    line-height: 1.5;
+    background-color: #f2f2f2;
+}
+
+.premium-body button{
+    padding: 10px;
+    font: inherit;
+    margin-left: 40px;
 }
 
 footer{
@@ -83,3 +148,8 @@ footer{
 }
 
 
+/* @media only screen and (max-width: 768px) {
+    main {
+        padding: 100px;
+    }
+} */
