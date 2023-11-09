@@ -31,8 +31,6 @@ body{
 
 main{
     padding: 10px;
-    /* background-color: white; */
-    /* background-image: url(./assets/bg.jpg); */
 }
 
 .how-it-works, .alpha-premium, .schedule-wash, .testimonials, .contact-us, .faq{
@@ -89,8 +87,7 @@ h1, h2, h3, h4{
 
 .how-it-works h2{
     text-align: center;
-    margin-bottom: 30px;
-    font-size: 2rem;
+    font-size: 40px;
 }
 
 .workings{
@@ -119,13 +116,8 @@ h1, h2, h3, h4{
 
 .alpha-premium h2{
     text-align: center;
-    font-size: 2rem;
-}
-
-.premium-body{
-    /* display: flex;
-    justify-content: center; */
-    /* background-color: #f2f2f2; */
+    font-size: 40px;
+    margin-bottom: 30px;
 }
 
 .premium-content{
@@ -137,11 +129,6 @@ h1, h2, h3, h4{
     float: right;
     width: 550px;
 }
-/* 
-.premium-body img{
-    width: 500px;
-    margin-right: 10px;
-} */
 
 .premium-body button{
     padding: 10px;
@@ -149,13 +136,93 @@ h1, h2, h3, h4{
     margin-left: 40px;
 }
 
+#schedule-form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 500px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+input, select{
+    font: inherit;
+    padding: 5px;
+}
+
+form :last-child{
+    margin-top: 18px;
+    padding: 10px;
+    font: inherit;
+}
+
 footer{
     text-align: center;
 }
 
 
-/* @media only screen and (max-width: 768px) {
-    main {
-        padding: 100px;
+@media only screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
     }
-} */
+  
+    .header h1 {
+      font-size: 2rem;
+    }
+  
+    .hero {
+      height: auto;
+      padding: 30px;
+      text-align: center;
+    }
+  
+    .hero-card {
+      width: 100%;
+      height: auto;
+    }
+  
+    .how-it-works {
+      padding: 30px;
+      height: auto;
+    }
+  
+    .workings {
+      flex-direction: column;
+    }
+  
+    .step-one {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .alpha-premium {
+      height: auto;
+    }
+  
+    .premium-content {
+      width: 100%;
+      float: none;
+      margin-right: 0;
+    }
+  
+    #schedule-form {
+      width: 100%;
+    }
+  
+    .testimonial-cards {
+      flex-wrap: wrap;
+    }
+  
+    .testimonial-cards .t-card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .contact-us,
+    .faq {
+      padding: 30px;
+      height: auto;
+    }
+  }
+  
