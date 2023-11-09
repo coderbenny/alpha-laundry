@@ -31,17 +31,51 @@ body{
 
 main{
     padding: 10px;
-    background-color: white;
+    /* background-color: white; */
+    /* background-image: url(./assets/bg.jpg); */
 }
 
-.hero, .how-it-works, .alpha-premium, .schedule-wash, .testimonials, .contact-us, .faq{
-    background-color: yellowgreen;
+.how-it-works, .alpha-premium, .schedule-wash, .testimonials, .contact-us, .faq{
+    background-color: #333333;
     padding: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .hero{
-    padding-bottom: 10px;
+    background-image: url(./assets/giovanna-karla-givi-zXlR3jKJf6M-unsplash.jpg);
+    background-size:cover;
+    padding: 50px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.hero-card{
+    padding: 20px;
+    width: 500px;
+    height: 350px;
+    background-color: rgb(232, 246, 246);
+}
+
+.hero-card h2{
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.hero-card p{
+    line-height: 1.5;
+}
+
+.hero-card button{
+    padding: 10px;
+    font: inherit;
+}
+
+.how-it-works{
+    padding: 50px;
+}
+
+.workings{
+    display: flex;
 }
 
 footer{
