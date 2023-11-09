@@ -110,32 +110,38 @@ h1, h2, h3, h4{
 }
 
 .alpha-premium {
+    background-image: url(./assets/african-american-man-holding-clean-laundry-laundry-powder-making-fish-face-with-mouth-squinting-eyes-crazy-comical.jpg);
+    background-size: cover;
     padding: 50px;
-    height: 500px;
+    height: 800px;
     align-items: center;
 }
 
-.alpha-premium h1{
+.alpha-premium h2{
     text-align: center;
-    padding-bottom: 30px;
+    font-size: 2rem;
 }
 
 .premium-body{
-    display: flex;
+    /* display: flex;
+    justify-content: center; */
     /* background-color: #f2f2f2; */
 }
 
-.premium-body img{
-    float: right;
-    width: 300px;
-    height: 300px;
-}
-
 .premium-content{
+    display: flex;
+    flex-direction: column;
     padding: 50px;
-    line-height: 1.5;
-    background-color: #f2f2f2;
+    line-height: 2;
+    background-color: rgba(255, 255, 255, 0.8);
+    float: right;
+    width: 550px;
 }
+/* 
+.premium-body img{
+    width: 500px;
+    margin-right: 10px;
+} */
 
 .premium-body button{
     padding: 10px;
