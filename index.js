@@ -1,14 +1,17 @@
 const orders = []
 const cart = document.querySelector('.items')
-const scheduleForm = document.querySelector('#add-item')
+const scheduleForm = document.querySelector('#schedule-form')
 
 scheduleForm.addEventListener('submit', (e)=>{
     e.preventDefault()
-    const form  = e.target 
-    const name = form.name
-    const phone = form.phone
-    const garment = form.garment
-    const quantity = form.quantity
+    const form  = e.target
+    // console.log(form)
+
+    const name = form.name.value
+    const phone = form.phone.value
+    const pickupDate = form.pickupDate
+    const garment = form.garment.value
+    const quantity = form.quantity.value
 
     // Define the order
     const userOrder = {
@@ -22,10 +25,7 @@ scheduleForm.addEventListener('submit', (e)=>{
         ]
     }
 
-    
-
-
-
+    console.log(userOrder)
 })
 
 document.addEventListener('DOMContentLoaded', ()=>{
