@@ -19,8 +19,10 @@
         <div class="topnav">
             <a href="#">Home</a>
             <a href="#">How it works</a>
-            <a href="#">Services</a>
+            <a href="#">Schedule Wash</a>
+            <a href="#">Join Us</a>
             <a href="#">Contact Us</a>
+
         </div>
     </div>
 
@@ -77,12 +79,14 @@
         </div>
 
         <div class="schedule-wash">
-            <h2>Schedule A Wash</h2>
             <form action="" id="schedule-form">
+                <h1 style="text-align: center;">Schedule A Wash</h1>
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your name...">
                 <label for="phone">Phone</label>
                 <input type="tel" id="phone" name="phone" pattern="0?\d{3}-\d{3}-\d{4}" placeholder="Your phone number...">
+                <label for="date">Date</label>
+                <input type="date">
                 <label for="garment">Choose Garment</label>
                 <select name="garment" id="garment" name="garment">
                     <option value="Jeans">Jeans</option>
@@ -99,33 +103,38 @@
             </form>
         </div>
 
-        <div class="testimonials">
-            <h2>Testimonials</h2>
-            <div class="testimonial-cards">
-                <div class="t-card"></div>
-                <div class="t-card"></div>
-                <div class="t-card"></div>
-                <div class="t-card"></div>
-                <div class="t-card"></div>
+        <div class="join-us">
+            <div class="join-content">
+                <form action="" id="join-us-form">
+                    <h1 style="text-align:center;">Join Us</h1>
+                    <label for="fname">Name</label>
+                    <input type="text" name="fname" id="fname" placeholder="Type your first name...">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phone" id="phone" placeholder="Type your phone number...">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Type your phone number...">
+                    <button type="submit">Join</button>
+                </form>
             </div>
         </div>
 
         <div class="contact-us">
-            <h2>Contact Us</h2>
             <form action="" id="contact-form">
+                <h1 style="text-align: center;">Contact Us</h1>
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your name...">
                 <label for="phone">Phone</label>
                 <input type="tel" id="phone" name="phone" pattern="0?\d{3}-\d{3}-\d{4}" placeholder="Your phone number...">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email">
+                <label for="message">Message</label>
                 <textarea name="contact-message" id="contact-message" cols="30" rows="5"></textarea>
                 <button type="submit">Book Now</button>
             </form>
         </div>
 
         <div class="faq">
-            <h2>FAQ</h2>
+            <h1>FAQ</h1>
         </div>
     </main>
     

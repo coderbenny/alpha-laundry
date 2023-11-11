@@ -33,8 +33,8 @@ main{
     padding: 10px;
 }
 
-.how-it-works, .alpha-premium, .schedule-wash, .testimonials, .contact-us, .faq{
-    background-color: #333333;
+.how-it-works, .alpha-premium, .schedule-wash, .testimonials, .join-us, .contact-us, .faq{
+    /* background-color: #333333; */
     padding: 5px;
     margin-bottom: 20px;
 }
@@ -47,7 +47,7 @@ h1, h2, h3, h4{
     background-image: url(./assets/man-sticks-head-through-multicolored-laundry-poses-through-washing-machine-drum-with-bottle-detergent.jpg);
     background-size:cover;
     padding: 50px;
-    height: 700px;
+    height: 800px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -82,7 +82,7 @@ h1, h2, h3, h4{
     background-size:cover;
     padding: 50px;
     justify-content: center;
-    height: 700px;
+    height: 800px;
 }
 
 .how-it-works h2{
@@ -136,10 +136,9 @@ h1, h2, h3, h4{
     margin-left: 40px;
 }
 
-#schedule-form{
+#schedule-form, #contact-form, #join-us-form{
     display: flex;
     flex-direction: column;
-    padding: 20px;
     width: 500px;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -148,12 +147,53 @@ h1, h2, h3, h4{
 input, select{
     font: inherit;
     padding: 5px;
+    margin-bottom: 5px;
+}
+
+textarea{
+  resize: none;
 }
 
 form :last-child{
     margin-top: 18px;
     padding: 10px;
     font: inherit;
+}
+
+.schedule-wash, .join-us, .contact-us{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 700px;  
+}
+
+#contact-form, #join-us-form, #schedule-form{
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  font: inherit;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.schedule-wash{
+  background-image: url(./assets/big-pile-clothes-white-background.jpg);
+  background-size: cover;
+  height: 800px;
+}
+
+.join-us{
+  background-image: url(./assets/pleased-dark-skinned-woman-with-curly-hair-chcks-newsfeed-via-smartphone-poses-table-with-piles-laundry-around-folds-clothes-after-washing-isolated-pink-wall-household-concept.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+}
+
+.contact-us{
+  background-image: url(./assets/pleased-dark-skinned-woman-with-curly-hair-chcks-newsfeed-via-smartphone-poses-table-with-piles-laundry-around-folds-clothes-after-washing-isolated-pink-wall-household-concept.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 800px;
 }
 
 footer{
