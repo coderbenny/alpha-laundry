@@ -10,15 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lato:wght@700&family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
-    <script defer src="index.js"></script>
     <title>Alpha Laundry</title>
 </head>
 <body>
     <div class="header">
         <h1>Alpha Laundry</h1>
         <div class="topnav">
-            <a href="#">Home</a>
             <a href="#">How it works</a>
+            <a href="#">Premium</a>
             <a href="#">Schedule Wash</a>
             <a href="#">Join Us</a>
             <a href="#">Contact Us</a>
@@ -79,48 +78,80 @@
         </div>
 
         <div class="schedule-wash">
-            <form action="" id="schedule-form">
-                <h1 style="text-align: center;">Schedule A Wash</h1>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name...">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" pattern="0?\d{3}-\d{3}-\d{4}" placeholder="Your phone number...">
-                <label for="date">Date</label>
-                <input type="date">
-                <label for="garment">Choose Garment</label>
-                <select name="garment" id="garment" name="garment">
-                    <option value="Jeans">Jeans</option>
-                    <option value="Khaki">Khaki</option>
-                    <option value="Sweatpant">Sweatpant</option>
-                    <option value="short">Short</option>
-                    <option value="hoodie">Hoodie</option>
-                    <option value="Shirt">Shirt</option>
-                    <option value="Jacket">Jacket/Sweater</option>
-                </select>
-                <label for="quantity">Quantity</label>
-                <input type="number">
+            <div class="schedule-form-container">
+                <form action="" id="schedule-form">
+                    <h1 style="text-align: center;">Schedule A Wash</h1>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name...">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" pattern="0?\d{3}-\d{3}-\d{4}" placeholder="Your phone number...">
+                    <label for="date">Pickup Date</label>
+                    <input type="date">
+                    <label for="garment">Choose Garment</label>
+                    <select name="garment" id="garment" name="garment">
+                        <option value="Jeans">Jeans</option>
+                        <option value="Khaki">Khaki</option>
+                        <option value="Sweatpant">Sweatpant</option>
+                        <option value="short">Short</option>
+                        <option value="hoodie">Hoodie</option>
+                        <option value="Shirt">Shirt</option>
+                        <option value="Jacket">Jacket/Sweater</option>
+                    </select>
+                    <label for="quantity">Quantity</label>
+                    <input type="number">
+                    <button type="submit" id="add-item" style="padding: 10px;font: inherit;">Add Item</button>
+                </form>
+            </div>
+
+            <div class="items">
+                <h2>Your Cart</h2>
+                <div class="name">
+                    <p><strong>Name:</strong> <span>Benny Hinn</span></p>
+                </div>
+                <div class="items-content">
+                    <ol>
+                        <li>Jeans Trouser<span>Ksh.50</span></li>
+                        <li>Shirt<span>Ksh.50</span></li>
+                        <li>Socks<span>Ksh.50</span></li>
+                        <li>Jacket<span>Ksh.50</span></li>
+                        <li>Jeans<span>Ksh.50</span></li>
+                        <li>Jeans<span>Ksh.50</span></li>
+                        <li>Jeans<span>Ksh.50</span></li>
+                        <li>Jeans<span>Ksh.50</span></li>
+                        <li>Jeans<span>Ksh.50</span></li>
+                        <li>Jeans<span>Ksh.50</span></li>
+                        <li>Jeans<span>Ksh.50</span></li>
+                        <li>Jeans<span>Ksh.50</span></li>
+                        <li>Jeans<span>Ksh.50</span></li>
+                        <li>Jeans<span>Ksh.50</span></li>
+                    </ol>
+                </div>
+
                 <button type="submit">Book Now</button>
-            </form>
+            </div>
+            <!-- <img src="./assets/african-american-man-holding-clean-laundry-laundry-powder-making-fish-face-with-mouth-squinting-eyes-crazy-comical.jpg" alt="laundry image 3"> -->
         </div>
 
         <div class="join-us">
             <div class="join-content">
                 <form action="" id="join-us-form">
-                    <h1 style="text-align:center;">Join Us</h1>
+                    <h1 style="text-align:center; margin-bottom: 0px;">Join Us</h1>
+                    <p>Would you like to work for us? If so then fill the form below and submit your contacts and we will reach out soonest!</p>
                     <label for="fname">Name</label>
                     <input type="text" name="fname" id="fname" placeholder="Type your first name...">
                     <label for="phone">Phone Number</label>
                     <input type="text" name="phone" id="phone" placeholder="Type your phone number...">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Type your phone number...">
-                    <button type="submit">Join</button>
+                    <button type="submit">Apply</button>
                 </form>
             </div>
         </div>
 
         <div class="contact-us">
             <form action="" id="contact-form">
-                <h1 style="text-align: center;">Contact Us</h1>
+                <h1 style="text-align: center; margin-bottom: 0;">Contact Us</h1>
+                <p>Please feel free to reach out to us anytime. We always want to hear from you.</p>
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your name...">
                 <label for="phone">Phone</label>
@@ -134,10 +165,21 @@
         </div>
 
         <div class="faq">
-            <h1>FAQ</h1>
+            <h1>Frequently Asked Questions</h1>
+            <div class="accordion">
+                <div class="question">How do I get started?</div>
+                <div class="answer">To Get started simply sign up to our website.</div>
+        
+                <div class="question">How do I get started?</div>
+                <div class="answer">To Get started simply sign up to our website.</div>
+        
+                <div class="question">How do I get started?</div>
+                <div class="answer">To Get started simply sign up to our website.</div>
+            </div>
         </div>
     </main>
     
     <footer>All Rights Reserved 2023 | Alpha Laundry Services</footer>
+<script src="index.js"></script>
 </body>
 </html>

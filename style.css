@@ -41,11 +41,13 @@ main{
 
 h1, h2, h3, h4{
     font-family: 'Lato', sans-serif;
+    color:#008080;
 }
 
 .hero{
-    background-image: url(./assets/man-sticks-head-through-multicolored-laundry-poses-through-washing-machine-drum-with-bottle-detergent.jpg);
+    background-image: url(./assets/daily-domestic-chores-responsibilities.jpg);
     background-size:cover;
+    background-position: center;
     padding: 50px;
     height: 800px;
     margin-bottom: 20px;
@@ -78,8 +80,10 @@ h1, h2, h3, h4{
 }
 
 .how-it-works{
-    background-image: url(./assets/giovanna-karla-givi-zXlR3jKJf6M-unsplash.jpg);
-    background-size:cover;
+    /* background-image: url(./assets/giovanna-karla-givi-zXlR3jKJf6M-unsplash.jpg);
+    background-size:cover; */
+    display: flex;
+    flex-direction: column;
     padding: 50px;
     justify-content: center;
     height: 800px;
@@ -104,10 +108,15 @@ h1, h2, h3, h4{
     padding: 30px;
     margin-right: 20px;
     border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+div{
+  font: inherit;
 }
 
 .alpha-premium {
-    background-image: url(./assets/african-american-man-holding-clean-laundry-laundry-powder-making-fish-face-with-mouth-squinting-eyes-crazy-comical.jpg);
+    background-image: url(./assets/man-sticks-head-through-multicolored-laundry-poses-through-washing-machine-drum-with-bottle-detergent.jpg);
     background-size: cover;
     padding: 50px;
     height: 800px;
@@ -154,7 +163,7 @@ textarea{
   resize: none;
 }
 
-form :last-child{
+#join-us-form :last-child, #contact-form :last-child{
     margin-top: 18px;
     padding: 10px;
     font: inherit;
@@ -162,7 +171,7 @@ form :last-child{
 
 .schedule-wash, .join-us, .contact-us{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 700px;  
@@ -182,12 +191,45 @@ form :last-child{
   height: 800px;
 }
 
+.schedule-wash img{
+  width: 50%;
+  margin: 0;
+}
+
+.items{
+  background: rgba(255, 255, 255, 0.8);
+  height: 415px;
+  width: 300px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+
+}
+
+.items-content{
+  font: inherit;
+  overflow: auto;
+  max-height: 240px;
+}
+
+.items-content ol{
+  margin: 0;
+}
+
+
+.items button{
+  padding: 10px;
+  font: inherit;
+  width: 100%;
+}
+
 .join-us{
-  background-image: url(./assets/pleased-dark-skinned-woman-with-curly-hair-chcks-newsfeed-via-smartphone-poses-table-with-piles-laundry-around-folds-clothes-after-washing-isolated-pink-wall-household-concept.jpg);
+  background-image: url(./assets/cheerful-african-american-woman-near-washing-machine-listening-music-by-earphones-from-mobile-phone-selfservice-laundry.jpg);
   background-size: cover;
   background-position: center;
   height: 800px;
 }
+
 
 .contact-us{
   background-image: url(./assets/pleased-dark-skinned-woman-with-curly-hair-chcks-newsfeed-via-smartphone-poses-table-with-piles-laundry-around-folds-clothes-after-washing-isolated-pink-wall-household-concept.jpg);
@@ -196,8 +238,43 @@ form :last-child{
   height: 800px;
 }
 
+.faq{
+  background-color: #fff;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.accordion{
+  margin-top: 10px;
+}
+
+.question{
+  background-color: #eee;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.answer{
+  display: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.question.active{
+  background-color: #ddd;
+}
+
+.answer.active{
+  display: block;
+}
+
 footer{
     text-align: center;
+    margin-bottom: 10px;
+    font: inherit;
 }
 
 
