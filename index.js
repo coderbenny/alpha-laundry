@@ -2,9 +2,9 @@ const orders = []
 const cart = document.querySelector('.items')
 const scheduleForm = document.querySelector('#schedule-form')
 
-scheduleForm.addEventListener('submit', (e)=>{
+scheduleForm.addEventListener('submit', (e) => {
     e.preventDefault()
-    const form  = e.target
+    const form = e.target
     // console.log(form)
 
     const name = form.name.value
@@ -19,7 +19,7 @@ scheduleForm.addEventListener('submit', (e)=>{
         phone: phone,
         garments: [
             {
-                name: garment, 
+                name: garment,
                 quantity: quantity
             }
         ]
@@ -28,12 +28,21 @@ scheduleForm.addEventListener('submit', (e)=>{
     console.log(userOrder)
 })
 
-document.addEventListener('DOMContentLoaded', ()=>{
-    // Hiding the cart when the DOM Loads
-    cart.style.display = 'none';
-    
-})
+// Declaring the navigation Links
+const navLinks = document.querySelector('.topnav').children
+// console.log(navLinks)
 
+//Setting the scroll to event listener
+for (const navLink of navLinks) {
+    navLink.addEventListener('click', (e) => {
+        const sectionId = navLink.id;
+
+        if (sectionId) {
+            document.querySelector(`${sectionId}`).scrollIntoView({ behavior: 'smooth' })
+        }
+    })
+
+}
 
 
 

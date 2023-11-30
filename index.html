@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Poppins:wght@300&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lato:wght@700&family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lato:wght@700&family=Poppins:wght@300&family=Roboto&display=swap"
+        rel="stylesheet">
     <title>Alpha Laundry</title>
 </head>
+
 <body>
     <div class="header">
         <h1>Alpha Laundry</h1>
         <div class="topnav">
-            <a href="#">How it works</a>
-            <a href="#">Premium</a>
-            <a href="#">Schedule Wash</a>
-            <a href="#">Join Us</a>
-            <a href="#">Contact Us</a>
+            <a href="#" id="#how-it-works">How it works</a>
+            <a href="#" id="#alpha-premium">Premium</a>
+            <a href="#" id="#schedule-wash">Schedule Wash</a>
+            <a href="#" id="#join-us">Join Us</a>
+            <a href="#" id="#contact-us">Contact Us</a>
 
         </div>
     </div>
 
     <main>
-        <div class="hero">         
+        <div class="hero">
             <div class="hero-card">
                 <h2>Nairobi's No.1 Laundry Cleaning Choice</h2>
-                <p>A tradition of unsurpassed customer service and unwavering commitment to high quality cleaning and laundry servives.</p>
+                <p>A tradition of unsurpassed customer service and unwavering commitment to high quality cleaning and
+                    laundry servives.</p>
                 <button class="sign-up" type="button">Sign Up For Free Pickup & Delivery</button>
             </div>
         </div>
 
-        <div class="how-it-works">
+        <div class="how-it-works" id="how-it-works">
             <h2>How It Works</h2>
             <div class="workings">
                 <div class="step-one">
@@ -46,7 +53,7 @@
                     <h3>Step 2</h3>
                     <p>Enter your phone details</p>
                 </div>
-                
+
                 <div class="step-one">
                     <h3>Step 3</h3>
                     <p>Review and Confirm order</p>
@@ -59,7 +66,7 @@
             </div>
         </div>
 
-        <div class="alpha-premium">
+        <div class="alpha-premium" id="alpha-premium">
             <h2>Alpha Premium Laundry</h2>
             <div class="premium-body">
                 <!-- <img src="./assets/colorful-towels-liquid-laundry-detergent.jpg" alt="laundry picture">
@@ -67,9 +74,12 @@
                 <div class="premium-content">
                     <p>For our <strong>Premium</strong> customers, we offer the following:</p>
                     <ul>
-                        <li><strong>Priority Scheduling:</strong> Guaranteed earliest time slots for both pickup and delivery.</li>
-                        <li><strong>Ironing & Garment Steaming:</strong> Guaranteed ironing of your garment so that when they are delivered, they are ready to wear.</li>
-                        <li><strong>Access to Exclusive Detergents:</strong> Clients can select from a wide range of detergents to suit their specific preferences.</li>
+                        <li><strong>Priority Scheduling:</strong> Guaranteed earliest time slots for both pickup and
+                            delivery.</li>
+                        <li><strong>Ironing & Garment Steaming:</strong> Guaranteed ironing of your garment so that when
+                            they are delivered, they are ready to wear.</li>
+                        <li><strong>Access to Exclusive Detergents:</strong> Clients can select from a wide range of
+                            detergents to suit their specific preferences.</li>
                     </ul>
                     <button id="premium-sign-up" button">Sign Up For Premium</button>
                 </div>
@@ -77,14 +87,14 @@
             </div>
         </div>
 
-        <div class="schedule-wash">
+        <div class="schedule-wash" id="schedule-wash">
             <div class="schedule-form-container">
                 <form action="" id="schedule-form">
                     <h1 style="text-align: center;">Schedule A Wash</h1>
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your name...">
                     <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone"  placeholder="Your phone number...">
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number...">
                     <label for="date">Pickup Date</label>
                     <input type="date" id="pickup-date">
                     <label for="garment">Choose Garment</label>
@@ -98,7 +108,7 @@
                         <option value="Jacket">Jacket/Sweater</option>
                     </select>
                     <label for="quantity">Quantity</label>
-                    <input type="number" id="quantity">
+                    <input type="number" id="quantity" name="quantity">
                     <button type="submit" id="add-item" style="padding: 10px;font: inherit;">Add Item</button>
                 </form>
             </div>
@@ -132,11 +142,12 @@
             <!-- <img src="./assets/african-american-man-holding-clean-laundry-laundry-powder-making-fish-face-with-mouth-squinting-eyes-crazy-comical.jpg" alt="laundry image 3"> -->
         </div>
 
-        <div class="join-us">
+        <div class="join-us" id="join-us">
             <div class="join-content">
                 <form action="" id="join-us-form">
                     <h1 style="text-align:center; margin-bottom: 0px;">Join Us</h1>
-                    <p>Would you like to work for us? If so then fill the form below and submit your contacts and we will reach out soonest!</p>
+                    <p>Would you like to work for us? If so then fill the form below and submit your contacts and we
+                        will reach out soonest!</p>
                     <label for="fname">Name</label>
                     <input type="text" name="fname" id="fname" placeholder="Type your first name...">
                     <label for="phone">Phone Number</label>
@@ -148,14 +159,15 @@
             </div>
         </div>
 
-        <div class="contact-us">
+        <div class="contact-us" id="contact-us">
             <form action="" id="contact-form">
                 <h1 style="text-align: center; margin-bottom: 0;">Contact Us</h1>
                 <p>Please feel free to reach out to us anytime. We always want to hear from you.</p>
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your name...">
                 <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" pattern="0?\d{3}-\d{3}-\d{4}" placeholder="Your phone number...">
+                <input type="tel" id="phone" name="phone" pattern="0?\d{3}-\d{3}-\d{4}"
+                    placeholder="Your phone number...">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email">
                 <label for="message">Message</label>
@@ -169,17 +181,18 @@
             <div class="accordion">
                 <div class="question">How do I get started?</div>
                 <div class="answer">To Get started simply sign up to our website.</div>
-        
+
                 <div class="question">How do I get started?</div>
                 <div class="answer">To Get started simply sign up to our website.</div>
-        
+
                 <div class="question">How do I get started?</div>
                 <div class="answer">To Get started simply sign up to our website.</div>
             </div>
         </div>
     </main>
-    
+
     <footer>All Rights Reserved 2023 | Alpha Laundry Services</footer>
-<script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
